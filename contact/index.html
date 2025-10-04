@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav>
         <a href="../">Home</a>
         <a href="../projects/">Projects</a>
         <a href="./">Contact</a>
+        <a href="../CV/">CV</a>
+        <a href="https://github.com/aditgautam" target="_blank">GitHub</a>
     </nav>
 
     <h1>Contact</h1>
+
+    <form action="mailto:a@a.com">
+        <label for="email">Your Email:</label><br>
+        <input id="email" name="email" type="email">
+        <br><br>
+    
+        <label for="subject">Subject:</label><br>
+        <input id="subject" name="subject">
+        <br><br>
+    
+        <label for="body">Message:</label><br>
+        <textarea id="body" name="body" rows="7" cols="27"></textarea>
+        <br><br>
+    
+        <button>Send</button>
+    </form>
     
 </body>
 </html>
