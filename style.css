@@ -1,3 +1,24 @@
+nav{
+    font:100%/1.5 system-ui;
+    display: flex;
+    margin-bottom: 50px;
+    border-bottom: 1px solid oklch(80% 3% 200);
+    a{
+        display: flex;
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+        padding: 0.5em;
+    }
+    a.current{
+        border-bottom: 0.4em solid oklch(80% 3% 200);
+        padding-bottom: 0.1em;
+    }
+}
+
 body{
     font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    margin-inline: auto;
+    padding: 50px;
 }
