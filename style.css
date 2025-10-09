@@ -49,3 +49,8 @@ body {
     margin-inline: auto;
     padding: 50px;
 }
+form{
+    display: grid;
+    font: inherit;
+}
+
