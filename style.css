@@ -65,13 +65,10 @@ form{
 
 
 body.CV{
-  max-width: 72ch;
   margin-inline: auto;
   padding: 40px 24px;
   line-height: 1.35;
 }
-
-
 
 body.CV section > article{
   display: flex;
