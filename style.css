@@ -54,3 +54,51 @@ form{
     font: inherit;
 }
 
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(15em, 1fr));
+}
+
+.projects img{
+    padding: 5px;
+}
+
+
+body.CV{
+  max-width: 72ch;
+  margin-inline: auto;
+  padding: 40px 24px;
+  line-height: 1.35;
+}
+
+
+
+body.CV section > article{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  padding-block: 10px;
+  margin-block: 6px;
+}
+
+
+body.CV .date{
+  margin-left: auto;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  padding-left: 12px;
+}
+
+@media (max-width: 680px){
+  body.CV .date{
+    flex-basis: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 2px;
+  }
+}
+
+
+
