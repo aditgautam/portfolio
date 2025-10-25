@@ -5,24 +5,19 @@
     --color-accent: oklch(87.266% 0.07276 351.978 / 0.87);
 }
 
-:root[data-theme="dark"] {
-    --color-bg: oklch(20% 5% 220);
-    --color-text: oklch(95% 2% 220);
-    --color-border: oklch(60% 3% 200);
-    --color-accent: oklch(70% 60% 40);
-}
-
 html {
-    background-color: var(--color-bg);
-    color: var(--color-text);
+    background-color: canvas;
+    color: canvastext;
     accent-color: var(--color-accent);
+    color-scheme: light dark;
 }
 
 nav {
+    --border-color: oklch(50% 10% 200 / 40%);
     font: 100%/1.5 system-ui;
     display: flex;
     margin-bottom: 50px;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
@@ -34,7 +29,7 @@ nav a {
 }
 
 a.current {
-    border-bottom: 0.4em solid oklch(81.177% 0.13863 342.95);
+    border-bottom: 0.4em solid var(--border-color);
     padding-bottom: 0.1em;
 }
 
@@ -97,5 +92,15 @@ body.CV .date{
   }
 }
 
+label.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
+    font-family: inherit;
+}
+label.color-scheme select {
+    font: inherit;
+}
 
 
